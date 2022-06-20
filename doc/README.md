@@ -9,6 +9,9 @@ sudo docker push yiluxiangbei/paddlespeech:v1.0
 cd ../..
 sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.0 bash
 
+wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
+paddlespeech_client asr_online --server_ip 49.232.6.131 --port 8101 --input ./zh.wav
+
 cd /app
 paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
 
@@ -30,10 +33,20 @@ sudo docker rm paddlespeech
 
 sudo docker logs -f paddlespeech
 
+sudo docker build -t yiluxiangbei/paddlespeech:v1.2.1 -f Dockerfile2 .
+sudo docker push yiluxiangbei/paddlespeech:v1.2.1
+
+sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.2.1 bash
+
+wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
+paddlespeech_client asr_online --server_ip 49.232.6.131 --port 8101 --input ./zh.wav
+
 apt-get autoremove --purge protobuf-compiler
 apt-get autoremove --purge libprotobuf-dev
 
 du -h -d 1 .
+wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
+https://github.com/PaddlePaddle/PaddleSpeech/blob/develop/demos/streaming_asr_server/README.md
 ```
 
 ```shell

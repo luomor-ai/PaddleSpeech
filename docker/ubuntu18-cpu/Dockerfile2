@@ -3,4 +3,4 @@ FROM yiluxiangbei/paddlespeech:v1.1
 WORKDIR /app
 COPY PaddleSpeech .
 
-ENTRYPOINT ["paddlespeech_server", "start", "--config_file", "./paddlespeech/server/conf/application.yaml"]
+# ENTRYPOINT ["paddlespeech_server", "start", "--config_file", "./paddlespeech/server/conf/application.yaml"]

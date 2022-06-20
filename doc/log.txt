@@ -257,3 +257,28 @@ INFO:     connection failed (403 Forbidden)
 INFO 2022-06-20 08:21:52,055 server.py:225] connection failed (403 Forbidden)
 INFO:     connection closed
 INFO 2022-06-20 08:21:52,055 server.py:260] connection closed
+
+
+paddlespeech_client asr --server_ip 127.0.0.1 --port 8090 --input zh.wav
+/opt/conda/lib/python3.9/site-packages/librosa/core/constantq.py:1059: DeprecationWarning: `np.complex` is a deprecated alias for the builtin `complex`. To silence this warning, use `complex` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.complex128` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  dtype=np.complex,
+[2022-06-20 08:43:21,196] [    INFO] - asr http client start
+[2022-06-20 08:43:23,514] [    INFO] - asr http client finished
+[2022-06-20 08:43:23,514] [    INFO] - ASR result: 我认为跑步最重要的就是给我带来了身体健康
+[2022-06-20 08:43:23,514] [    INFO] - Response time 2.318160 s.
+
+[2022-06-20 08:43:21,200] [    INFO] - checking the audio file format......
+[2022-06-20 08:43:21,201] [    INFO] - The sample rate is 16000
+[2022-06-20 08:43:21,201] [    INFO] - The audio file format is right
+[2022-06-20 08:43:21,201] [    INFO] - start run asr engine
+[2022-06-20 08:43:21,201] [    INFO] - get the preprocess conf
+[2022-06-20 08:43:21,201] [    INFO] - read the audio file
+[2022-06-20 08:43:21,201] [    INFO] - audio shape: (79949,)
+[2022-06-20 08:43:21,221] [    INFO] - audio feat shape: [1, 498, 80]
+[2022-06-20 08:43:21,221] [    INFO] - audio feat process success
+[2022-06-20 08:43:21,221] [    INFO] - start to infer the model to get the output
+[2022-06-20 08:43:21,221] [    INFO] - we will use the transformer like model : conformer_wenetspeech
+[2022-06-20 08:43:23,512] [    INFO] - inference time: 2.2906551361083984
+[2022-06-20 08:43:23,512] [    INFO] - asr engine type: python
+INFO:     127.0.0.1:47970 - "POST /paddlespeech/asr HTTP/1.1" 200 OK

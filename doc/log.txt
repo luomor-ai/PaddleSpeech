@@ -33,3 +33,10 @@ ERROR: Could not find a version that satisfies the requirement nara_wpe (from pa
 ERROR: No matching distribution found for nara_wpe
 WARNING: You are using pip version 21.1.2; however, version 22.1.2 is available.
 You should consider upgrading via the '/Users/peterzhang/dev/github/PaddleSpeech/venv/bin/python -m pip install --upgrade pip' command.
+
+paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
+/opt/conda/lib/python3.9/site-packages/librosa/core/constantq.py:1059: DeprecationWarning: `np.complex` is a deprecated alias for the builtin `complex`. To silence this warning, use `complex` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.complex128` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  dtype=np.complex,
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /root/nltk_data...

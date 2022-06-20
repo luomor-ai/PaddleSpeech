@@ -68,3 +68,185 @@ Collecting paddlespeech_ctcdecoders
   Downloading paddlespeech_ctcdecoders-0.2.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (16.9 MB)
      |███▎                            | 1.7 MB 21 kB/s eta 0:11:51
      |█████████▊                      | 5.1 MB 30 kB/s eta 0:06:20
+[2022-06-20 07:43:42,205] [    INFO] - start to init the model
+[2022-06-20 07:43:42,207] [    INFO] - unique_endpoints {''}
+[2022-06-20 07:43:42,207] [    INFO] - Downloading asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar.gz from https://paddlespeech.bj.bcebos.com/s2t/wenetspeech/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar.gz
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 466988/466988 [00:18<00:00, 25904.33it/s]
+[2022-06-20 07:44:00,387] [    INFO] - File /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar.gz md5 checking...
+[2022-06-20 07:44:01,333] [    INFO] - Decompressing /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar.gz...
+[2022-06-20 07:44:07,961] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar
+[2022-06-20 07:44:07,962] [    INFO] - /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar
+[2022-06-20 07:44:07,962] [    INFO] - /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar/model.yaml
+[2022-06-20 07:44:07,962] [    INFO] - /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar/exp/conformer/checkpoints/wenetspeech.pdparams
+[2022-06-20 07:44:11,433] [    INFO] - Initialize ASR server engine successfully on device: cpu.
+[2022-06-20 07:44:11,435] [    INFO] - unique_endpoints {''}
+[2022-06-20 07:44:11,437] [    INFO] - Downloading fastspeech2_nosil_baker_ckpt_0.4.zip from https://paddlespeech.bj.bcebos.com/Parakeet/released_models/fastspeech2/fastspeech2_nosil_baker_ckpt_0.4.zip
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 477172/477172 [00:18<00:00, 25258.07it/s]
+[2022-06-20 07:44:30,405] [    INFO] - File /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4.zip md5 checking...
+[2022-06-20 07:44:31,371] [    INFO] - Decompressing /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4.zip...
+[2022-06-20 07:44:36,194] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4
+[2022-06-20 07:44:36,194] [    INFO] - /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4
+[2022-06-20 07:44:36,194] [    INFO] - /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4/default.yaml
+[2022-06-20 07:44:36,194] [    INFO] - /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4/snapshot_iter_76000.pdz
+[2022-06-20 07:44:36,195] [    INFO] - unique_endpoints {''}
+[2022-06-20 07:44:36,196] [    INFO] - Downloading pwg_baker_ckpt_0.4.zip from https://paddlespeech.bj.bcebos.com/Parakeet/released_models/pwgan/pwg_baker_ckpt_0.4.zip
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15405/15405 [00:00<00:00, 22530.44it/s]
+[2022-06-20 07:44:36,946] [    INFO] - File /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4.zip md5 checking...
+[2022-06-20 07:44:36,978] [    INFO] - Decompressing /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4.zip...
+[2022-06-20 07:44:37,087] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4
+[2022-06-20 07:44:37,087] [    INFO] - /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4
+[2022-06-20 07:44:37,087] [    INFO] - /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4/pwg_default.yaml
+[2022-06-20 07:44:37,087] [    INFO] - /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4/pwg_snapshot_iter_400000.pdz
+vocab_size: 268
+frontend done!
+encoder_type is transformer
+decoder_type is transformer
+acoustic model done!
+voc done!
+[2022-06-20 07:44:44,147] [    INFO] - Start to warm up.
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 0.653 seconds.
+Prefix dict has been built successfully.
+/opt/conda/lib/python3.9/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: UserWarning: The dtype of left and right variables are not the same, left dtype is paddle.int64, but right dtype is paddle.int32, the right dtype will convert to paddle.int64
+  warnings.warn(
+[2022-06-20 07:44:50,583] [    INFO] - The response time of the 0 warm up: 6.43637228012085 s
+[2022-06-20 07:44:56,184] [    INFO] - The response time of the 1 warm up: 5.599989652633667 s
+[2022-06-20 07:45:01,824] [    INFO] - The response time of the 2 warm up: 5.640017509460449 s
+[2022-06-20 07:45:01,824] [    INFO] - Warm up successfully.
+[2022-06-20 07:45:01,824] [    INFO] - Initialize TTS server engine successfully on device: cpu.
+[2022-06-20 07:45:01,826] [    INFO] - unique_endpoints {''}
+[2022-06-20 07:45:01,827] [    INFO] - Downloading panns_cnn14.tar.gz from https://paddlespeech.bj.bcebos.com/cls/panns_cnn14.tar.gz
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 357907/357907 [00:14<00:00, 25189.24it/s]
+[2022-06-20 07:45:16,097] [    INFO] - File /root/.paddlespeech/models/panns_cnn14-32k/panns_cnn14.tar.gz md5 checking...
+[2022-06-20 07:45:16,823] [    INFO] - Decompressing /root/.paddlespeech/models/panns_cnn14-32k/panns_cnn14.tar.gz...
+[2022-06-20 07:45:24,752] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/panns_cnn14-32k/panns_cnn14
+[2022-06-20 07:45:27,737] [    INFO] - Initialize CLS server engine successfully on device: cpu.
+[2022-06-20 07:45:27,737] [    INFO] - Create the TextEngine Instance
+[2022-06-20 07:45:27,737] [    INFO] - Init the text engine
+[2022-06-20 07:45:27,738] [    INFO] - Text Engine set the device: cpu
+[2022-06-20 07:45:27,739] [    INFO] - unique_endpoints {''}
+[2022-06-20 07:45:27,741] [    INFO] - Downloading ernie_linear_p3_wudao-punc-zh.tar.gz from https://paddlespeech.bj.bcebos.com/text/ernie_linear_p3_wudao-punc-zh.tar.gz
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 357444/357444 [00:13<00:00, 26231.85it/s]
+[2022-06-20 07:45:41,425] [    INFO] - File /root/.paddlespeech/models/ernie_linear_p3_wudao-punc-zh/ernie_linear_p3_wudao-punc-zh.tar.gz md5 checking...
+[2022-06-20 07:45:42,145] [    INFO] - Decompressing /root/.paddlespeech/models/ernie_linear_p3_wudao-punc-zh/ernie_linear_p3_wudao-punc-zh.tar.gz...
+[2022-06-20 07:45:47,384] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/ernie_linear_p3_wudao-punc-zh/ernie_linear_p3_wudao-punc-zh.tar
+Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2022-06-20 07:45:56,823] [    INFO] - Downloading https://bj.bcebos.com/paddlenlp/models/transformers/ernie/vocab.txt and saved to /root/.paddlenlp/models/ernie-1.0
+[2022-06-20 07:45:56,824] [    INFO] - Downloading vocab.txt from https://bj.bcebos.com/paddlenlp/models/transformers/ernie/vocab.txt
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 89.5k/89.5k [00:00<00:00, 5.27MB/s]
+[2022-06-20 07:45:56,894] [    INFO] - Init the text engine successfully
+[2022-06-20 07:45:56,894] [    INFO] - Create the VectorEngine Instance
+[2022-06-20 07:45:56,894] [    INFO] - Init the vector engine
+[2022-06-20 07:45:56,894] [    INFO] - Vector Engine set the device: cpu
+[2022-06-20 07:45:56,894] [    INFO] - load the pretrained model: ecapatdnn_voxceleb12-16k
+[2022-06-20 07:45:56,897] [    INFO] - unique_endpoints {''}
+[2022-06-20 07:45:56,897] [    INFO] - Downloading sv0_ecapa_tdnn_voxceleb12_ckpt_0_2_0.tar.gz from https://paddlespeech.bj.bcebos.com/vector/voxceleb/sv0_ecapa_tdnn_voxceleb12_ckpt_0_2_0.tar.gz
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 259820/259820 [00:09<00:00, 26450.54it/s]
+[2022-06-20 07:46:06,859] [    INFO] - File /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_2_0.tar.gz md5 checking...
+[2022-06-20 07:46:07,378] [    INFO] - Decompressing /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_2_0.tar.gz...
+[2022-06-20 07:46:07,575] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2
+[2022-06-20 07:46:07,575] [    INFO] - start to read the ckpt from /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2/model/model.pdparams
+[2022-06-20 07:46:07,575] [    INFO] - read the config from /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2/conf/model.yaml
+[2022-06-20 07:46:07,575] [    INFO] - get the res path /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2
+[2022-06-20 07:46:07,580] [    INFO] - start to dynamic import the model class
+[2022-06-20 07:46:07,580] [    INFO] - model name ecapatdnn
+[2022-06-20 07:46:07,845] [    INFO] - start to set the model parameters to model
+[2022-06-20 07:46:07,903] [    INFO] - create the model instance success
+[2022-06-20 07:46:07,903] [    INFO] - Init the Vector engine successfully
+INFO:     Started server process [14]
+Started server process [14]
+INFO:     Waiting for application startup.
+Waiting for application startup.
+INFO:     Application startup complete.
+Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+
+pip install paddlespeech_ctcdecoders -i https://pypi.tuna.tsinghua.edu.cn/simple
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting paddlespeech_ctcdecoders
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cd/9e/2f5b85abd6183fed879ab8bcc65870da17bcda565bef4db877d35b6ba875/paddlespeech_ctcdecoders-0.2.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (16.9 MB)
+     |████████████████████████████████| 16.9 MB 4.4 MB/s
+Installing collected packages: paddlespeech-ctcdecoders
+Successfully installed paddlespeech-ctcdecoders-0.2.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use
+a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
+/opt/conda/lib/python3.9/site-packages/librosa/core/constantq.py:1059: DeprecationWarning: `np.complex` is a deprecated alias for the builtin `complex`. To silence this warning, use `complex` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.complex128` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  dtype=np.complex,
+[2022-06-20 07:47:33,270] [    INFO] - start to init the model
+[2022-06-20 07:47:33,270] [    INFO] - File /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar.gz md5 checking...
+[2022-06-20 07:47:37,323] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar
+[2022-06-20 07:47:37,323] [    INFO] - /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar
+[2022-06-20 07:47:37,323] [    INFO] - /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar/model.yaml
+[2022-06-20 07:47:37,323] [    INFO] - /root/.paddlespeech/models/conformer_wenetspeech-zh-16k/asr1_conformer_wenetspeech_ckpt_0.1.1.model.tar/exp/conformer/checkpoints/wenetspeech.pdparams
+[2022-06-20 07:47:42,826] [    INFO] - Initialize ASR server engine successfully on device: cpu.
+[2022-06-20 07:47:42,828] [    INFO] - File /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4.zip md5 checking...
+[2022-06-20 07:47:43,846] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4
+[2022-06-20 07:47:43,846] [    INFO] - /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4
+[2022-06-20 07:47:43,846] [    INFO] - /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4/default.yaml
+[2022-06-20 07:47:43,846] [    INFO] - /root/.paddlespeech/models/fastspeech2_csmsc-zh/fastspeech2_nosil_baker_ckpt_0.4/snapshot_iter_76000.pdz
+[2022-06-20 07:47:43,846] [    INFO] - File /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4.zip md5 checking...
+[2022-06-20 07:47:43,883] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4
+[2022-06-20 07:47:43,883] [    INFO] - /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4
+[2022-06-20 07:47:43,883] [    INFO] - /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4/pwg_default.yaml
+[2022-06-20 07:47:43,883] [    INFO] - /root/.paddlespeech/models/pwgan_csmsc-zh/pwg_baker_ckpt_0.4/pwg_snapshot_iter_400000.pdz
+vocab_size: 268
+frontend done!
+encoder_type is transformer
+decoder_type is transformer
+acoustic model done!
+voc done!
+[2022-06-20 07:47:50,866] [    INFO] - Start to warm up.
+Building prefix dict from the default dictionary ...
+DEBUG 2022-06-20 07:47:50,866 __init__.py:113] Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+DEBUG 2022-06-20 07:47:50,867 __init__.py:132] Loading model from cache /tmp/jieba.cache
+Loading model cost 0.614 seconds.
+DEBUG 2022-06-20 07:47:51,481 __init__.py:164] Loading model cost 0.614 seconds.
+Prefix dict has been built successfully.
+DEBUG 2022-06-20 07:47:51,481 __init__.py:166] Prefix dict has been built successfully.
+/opt/conda/lib/python3.9/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: UserWarning: The dtype of left and right variables are not the same, left dtype is paddle.int64, but right dtype is paddle.int32, the right dtype will convert to paddle.int64
+  warnings.warn(
+[2022-06-20 07:47:57,050] [    INFO] - The response time of the 0 warm up: 6.184180736541748 s
+[2022-06-20 07:48:02,576] [    INFO] - The response time of the 1 warm up: 5.525468349456787 s
+[2022-06-20 07:48:08,157] [    INFO] - The response time of the 2 warm up: 5.5810136795043945 s
+[2022-06-20 07:48:08,157] [    INFO] - Warm up successfully.
+[2022-06-20 07:48:08,157] [    INFO] - Initialize TTS server engine successfully on device: cpu.
+[2022-06-20 07:48:08,158] [    INFO] - File /root/.paddlespeech/models/panns_cnn14-32k/panns_cnn14.tar.gz md5 checking...
+[2022-06-20 07:48:12,637] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/panns_cnn14-32k/panns_cnn14
+[2022-06-20 07:48:15,670] [    INFO] - Initialize CLS server engine successfully on device: cpu.
+[2022-06-20 07:48:15,670] [    INFO] - Create the TextEngine Instance
+[2022-06-20 07:48:15,670] [    INFO] - Init the text engine
+[2022-06-20 07:48:15,670] [    INFO] - Text Engine set the device: cpu
+[2022-06-20 07:48:15,670] [    INFO] - File /root/.paddlespeech/models/ernie_linear_p3_wudao-punc-zh/ernie_linear_p3_wudao-punc-zh.tar.gz md5 checking...
+[2022-06-20 07:48:18,824] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/ernie_linear_p3_wudao-punc-zh/ernie_linear_p3_wudao-punc-zh.tar
+INFO 2022-06-20 07:48:19,142 utils.py:145] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2022-06-20 07:48:26,634] [    INFO] - Already cached /root/.paddlenlp/models/ernie-1.0/vocab.txt
+[2022-06-20 07:48:26,642] [    INFO] - Init the text engine successfully
+[2022-06-20 07:48:26,643] [    INFO] - Create the VectorEngine Instance
+[2022-06-20 07:48:26,643] [    INFO] - Init the vector engine
+[2022-06-20 07:48:26,643] [    INFO] - Vector Engine set the device: cpu
+[2022-06-20 07:48:26,643] [    INFO] - load the pretrained model: ecapatdnn_voxceleb12-16k
+[2022-06-20 07:48:26,643] [    INFO] - File /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_2_0.tar.gz md5 checking...
+[2022-06-20 07:48:27,161] [    INFO] - Use pretrained model stored in: /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2
+[2022-06-20 07:48:27,161] [    INFO] - start to read the ckpt from /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2/model/model.pdparams
+[2022-06-20 07:48:27,161] [    INFO] - read the config from /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2/conf/model.yaml
+[2022-06-20 07:48:27,161] [    INFO] - get the res path /root/.paddlespeech/models/ecapatdnn_voxceleb12-16k/sv0_ecapa_tdnn_voxceleb12_ckpt_0_1_2
+[2022-06-20 07:48:27,165] [    INFO] - start to dynamic import the model class
+[2022-06-20 07:48:27,166] [    INFO] - model name ecapatdnn
+[2022-06-20 07:48:27,428] [    INFO] - start to set the model parameters to model
+[2022-06-20 07:48:27,482] [    INFO] - create the model instance success
+[2022-06-20 07:48:27,483] [    INFO] - Init the Vector engine successfully
+INFO:     Started server process [57]
+INFO 2022-06-20 07:48:27,501 server.py:75] Started server process [57]
+INFO:     Waiting for application startup.
+INFO 2022-06-20 07:48:27,501 on.py:45] Waiting for application startup.
+INFO:     Application startup complete.
+INFO 2022-06-20 07:48:27,502 on.py:59] Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+INFO 2022-06-20 07:48:27,502 server.py:206] Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)

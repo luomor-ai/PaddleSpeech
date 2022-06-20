@@ -25,7 +25,9 @@ sudo docker push yiluxiangbei/paddlespeech:v1.2
 
 sudo docker run -it --name paddlespeech -p 8101:8090 -d yiluxiangbei/paddlespeech:v1.2
 
-sudo docker exec -it paddlespeech bash 
+sudo docker exec -it paddlespeech bash
+wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
+paddlespeech_client asr_online --server_ip 127.0.0.1 --port 8090 --input ./zh.wav
 
 sudo docker stop paddlespeech
 sudo docker start paddlespeech

@@ -66,6 +66,8 @@ punc	否	bool	是否开启标点符号添加 true：开启 false：关闭（默�
 ```shell
 apt-get install protoc
 ubuntu protoc
+wav to base64
+https://codebeautify.org/audio-to-base64-converter
 
 git clone git@github.com:google/benchmark.git
 git clone git@github.com:google/googletest.git

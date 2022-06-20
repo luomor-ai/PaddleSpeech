@@ -7,6 +7,7 @@ sudo docker build -t yiluxiangbei/paddlespeech:v1.0 -f Dockerfile1 .
 sudo docker push yiluxiangbei/paddlespeech:v1.0
 
 cd ../..
+sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.0 bash
 
 du -h -d 1 .
 ```

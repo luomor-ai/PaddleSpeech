@@ -12,6 +12,8 @@ sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.0 b
 cd /app
 paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
 
+sudo docker commit 36033335bd46 yiluxiangbei/paddlespeech:v1.1
+
 apt-get autoremove --purge protobuf-compiler
 apt-get autoremove --purge libprotobuf-dev
 

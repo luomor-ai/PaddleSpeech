@@ -40,3 +40,31 @@ Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdo
   dtype=np.complex,
 [nltk_data] Downloading package averaged_perceptron_tagger to
 [nltk_data]     /root/nltk_data...
+
+paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
+/opt/conda/lib/python3.9/site-packages/librosa/core/constantq.py:1059: DeprecationWarning: `np.complex` is a deprecated alias for the builtin `complex`. To silence this warning, use `complex` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.complex128` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  dtype=np.complex,
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /root/nltk_data...
+[nltk_data]   Unzipping taggers/averaged_perceptron_tagger.zip.
+[nltk_data] Downloading package cmudict to /root/nltk_data...
+[nltk_data]   Unzipping corpora/cmudict.zip.
+INFO 2022-06-20 07:38:42,545 font_manager.py:1443] generated new fontManager
+/opt/conda/lib/python3.9/site-packages/pip/_vendor/packaging/version.py:111: DeprecationWarning: Creating a LegacyVersion has been deprecated and will be removed in the next major release
+  warnings.warn(
+/opt/conda/lib/python3.9/site-packages/pip/_vendor/packaging/version.py:111: DeprecationWarning: Creating a LegacyVersion has been deprecated and will be removed in the next major release
+  warnings.warn(
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+/opt/conda/lib/python3.9/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+  warnings.warn(
+/opt/conda/lib/python3.9/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'index-url' will not be supported in future versions. Please use the underscore name 'index_url' instead
+  warnings.warn(
+/opt/conda/lib/python3.9/site-packages/setuptools/config.py:510: DeprecationWarning: The license_file parameter is deprecated, use license_files instead.
+  warnings.warn(msg, warning_class)
+Collecting paddlespeech_ctcdecoders
+  Downloading paddlespeech_ctcdecoders-0.2.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (16.9 MB)
+     |███▎                            | 1.7 MB 21 kB/s eta 0:11:51
+     |█████████▊                      | 5.1 MB 30 kB/s eta 0:06:20

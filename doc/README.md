@@ -27,6 +27,8 @@ sudo docker run -it --name paddlespeech -p 8101:8090 -d yiluxiangbei/paddlespeec
 
 sudo docker exec -it paddlespeech bash
 wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
+paddlespeech_client asr --server_ip 127.0.0.1 --port 8090 --input zh.wav
+# streaming
 paddlespeech_client asr_online --server_ip 127.0.0.1 --port 8090 --input ./zh.wav
 
 sudo docker stop paddlespeech
@@ -41,8 +43,8 @@ sudo docker push yiluxiangbei/paddlespeech:v1.2.1
 sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.2.1 bash
 
 wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
-paddlespeech_client asr_online --server_ip 49.232.6.131 --port 8101 --input ./zh.wav
-paddlespeech_client asr_online --server_ip 172.21.16.11 --port 8101 --input ./zh.wav
+paddlespeech_client asr --server_ip 49.232.6.131 --port 8101 --input ./zh.wav
+paddlespeech_client asr --server_ip 172.21.16.11 --port 8101 --input ./zh.wav
 
 apt-get autoremove --purge protobuf-compiler
 apt-get autoremove --purge libprotobuf-dev

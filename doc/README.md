@@ -9,5 +9,8 @@ sudo docker push yiluxiangbei/paddlespeech:v1.0
 cd ../..
 sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.0 bash
 
+cd /app
+paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
+
 du -h -d 1 .
 ```

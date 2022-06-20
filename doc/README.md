@@ -55,12 +55,24 @@ du -h -d 1 .
 wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
 https://github.com/PaddlePaddle/PaddleSpeech/blob/develop/demos/streaming_asr_server/README.md
 https://github.com/PaddlePaddle/PaddleSpeech/wiki/PaddleSpeech-Server-RESTful-API
+url:POST /paddlespeech/asr
+请求body参数
 字段	必选	类型	说明
 audio	是	string	将音频文件进行 base64编码后得到的 string
 audio_format	是	string	合成音频文件格式，可选：pcm、wav，默认值：wav
 sample_rate	是	int	音频的采样率，值选择 [8000, 16000]，默认与模型采样率一致
 lang	是	string	语种 zh_cn：中文; zh_tw: 台湾普通话； en_us：英文
 punc	否	bool	是否开启标点符号添加 true：开启 false：关闭（默认值）
+
+url:POST /paddlespeech/tts
+请求body参数
+字段	必选	类型	说明
+text	是	string	待合成文本
+spk_id	否	int	发音人id，未使用到，默认：0
+speed	否	float	合成音频的语速，值范围：(0，3]，默认：1.0，windows 平台不支持变语速
+volume	否	float	合成音频的音量，值范围：(0，3]，默认：1.0，值过大可能会存在截幅现象
+sample_rate	否	int	合成音频的采样率，只支持下采样，值选择 [0, 8000, 16000]，默认:0，表示与模型采样率一致
+save_path	否	string	通过此参数，可以在合成完成后在本地保存一个音频文件，默认值：None，表示不保存音频，保存音频格式支持wav和pcm
 ```
 
 ```shell

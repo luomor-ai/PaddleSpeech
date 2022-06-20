@@ -282,3 +282,34 @@ Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdo
 [2022-06-20 08:43:23,512] [    INFO] - inference time: 2.2906551361083984
 [2022-06-20 08:43:23,512] [    INFO] - asr engine type: python
 INFO:     127.0.0.1:47970 - "POST /paddlespeech/asr HTTP/1.1" 200 OK
+
+paddlespeech_client tts --server_ip 49.232.6.131 --port 8101 --input "您好，欢迎使用Peter的语音合成服务。" --output output.wav
+/opt/conda/lib/python3.9/site-packages/librosa/core/constantq.py:1059: DeprecationWarning: `np.complex` is a deprecated alias for the builtin `complex`. To silence this warning, use `complex` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.complex128` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  dtype=np.complex,
+[2022-06-20 08:49:57,572] [    INFO] - {'description': 'success.'}
+[2022-06-20 08:49:57,572] [    INFO] - Save synthesized audio successfully on output.wav.
+[2022-06-20 08:49:57,572] [    INFO] - Audio duration: 3.025000 s.
+[2022-06-20 08:49:57,572] [    INFO] - Response time: 5.485403 s.
+
+[2022-06-20 08:49:52,090] [    INFO] - request: text='您好，欢迎使用Peter的语音合成服务。' spk_id=0 speed=1.0 volume=1.0 sample_rate=0 save_path='output.wav'
+[2022-06-20 08:49:52,090] [    INFO] - Get tts engine successfully.
+[2022-06-20 08:49:57,545] [    INFO] - The sample rate of synthesized audio is the same as model, which is 24000Hz
+[2022-06-20 08:49:57,545] [    INFO] - Transform the volume of the audio successfully.
+[2022-06-20 08:49:57,545] [    INFO] - Transform the speed of the audio successfully.
+[2022-06-20 08:49:57,546] [    INFO] - Audio to string successfully.
+[2022-06-20 08:49:57,556] [    INFO] - Save audio to output.wav successfully.
+[2022-06-20 08:49:57,556] [    INFO] - AM model: fastspeech2_csmsc
+[2022-06-20 08:49:57,556] [    INFO] - Vocoder model: pwgan_csmsc
+[2022-06-20 08:49:57,556] [    INFO] - Language: zh
+[2022-06-20 08:49:57,556] [    INFO] - tts engine type: python
+[2022-06-20 08:49:57,556] [    INFO] - audio duration: 3.025
+[2022-06-20 08:49:57,557] [    INFO] - frontend inference time: 0.002290964126586914
+[2022-06-20 08:49:57,557] [    INFO] - AM inference time: 0.274852991104126
+[2022-06-20 08:49:57,557] [    INFO] - Vocoder inference time: 5.177147626876831
+[2022-06-20 08:49:57,557] [    INFO] - total inference time: 5.454400062561035
+[2022-06-20 08:49:57,557] [    INFO] - postprocess (change speed, volume, target sample rate) time: 0.011703014373779297
+[2022-06-20 08:49:57,557] [    INFO] - total generate audio time: 5.4661030769348145
+[2022-06-20 08:49:57,557] [    INFO] - RTF: 1.8031074586978628
+[2022-06-20 08:49:57,557] [    INFO] - device: cpu
+INFO:     49.232.6.131:40592 - "POST /paddlespeech/tts HTTP/1.1" 200 OK

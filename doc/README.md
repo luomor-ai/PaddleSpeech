@@ -46,6 +46,8 @@ wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
 paddlespeech_client asr --server_ip 49.232.6.131 --port 8101 --input ./zh.wav
 paddlespeech_client asr --server_ip 172.21.16.11 --port 8101 --input ./zh.wav
 
+paddlespeech_client tts --server_ip 49.232.6.131 --port 8101 --input "您好，欢迎使用Peter的语音合成服务。" --output output.wav
+
 apt-get autoremove --purge protobuf-compiler
 apt-get autoremove --purge libprotobuf-dev
 

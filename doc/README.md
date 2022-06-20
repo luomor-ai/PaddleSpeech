@@ -54,6 +54,13 @@ apt-get autoremove --purge libprotobuf-dev
 du -h -d 1 .
 wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav
 https://github.com/PaddlePaddle/PaddleSpeech/blob/develop/demos/streaming_asr_server/README.md
+https://github.com/PaddlePaddle/PaddleSpeech/wiki/PaddleSpeech-Server-RESTful-API
+字段	必选	类型	说明
+audio	是	string	将音频文件进行 base64编码后得到的 string
+audio_format	是	string	合成音频文件格式，可选：pcm、wav，默认值：wav
+sample_rate	是	int	音频的采样率，值选择 [8000, 16000]，默认与模型采样率一致
+lang	是	string	语种 zh_cn：中文; zh_tw: 台湾普通话； en_us：英文
+punc	否	bool	是否开启标点符号添加 true：开启 false：关闭（默认值）
 ```
 
 ```shell

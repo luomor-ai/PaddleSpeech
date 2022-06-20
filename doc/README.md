@@ -12,5 +12,13 @@ sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlespeech:v1.0 b
 cd /app
 paddlespeech_server start --config_file ./paddlespeech/server/conf/application.yaml
 
+apt-get autoremove --purge protobuf-compiler
+apt-get autoremove --purge libprotobuf-dev
+
 du -h -d 1 .
+```
+
+```shell
+apt-get install protoc
+ubuntu protoc
 ```

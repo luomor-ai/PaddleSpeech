@@ -15,6 +15,18 @@ paddlespeech_server start --config_file ./paddlespeech/server/conf/application.y
 pip install paddlespeech_ctcdecoders -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 sudo docker commit 36033335bd46 yiluxiangbei/paddlespeech:v1.1
+sudo docker push yiluxiangbei/paddlespeech:v1.1
+
+sudo docker build -t yiluxiangbei/paddlespeech:v1.2 -f Dockerfile2 .
+sudo docker push yiluxiangbei/paddlespeech:v1.2
+
+sudo docker run -it --name paddlespeech -p 8101:8090 -d yiluxiangbei/paddlespeech:v1.2
+
+sudo docker stop paddlespeech
+sudo docker start paddlespeech
+sudo docker rm paddlespeech
+
+sudo docker logs -f paddlespeech
 
 apt-get autoremove --purge protobuf-compiler
 apt-get autoremove --purge libprotobuf-dev

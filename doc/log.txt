@@ -1,0 +1,35 @@
+pip install -e /Users/peterzhang/dev/github/PaddleSpeech
+ERROR: Could not find a version that satisfies the requirement nara_wpe (from paddlespeech) (from versions: none)
+Obtaining file:///Users/peterzhang/dev/github/PaddleSpeech
+Collecting editdistance
+  Downloading editdistance-0.6.0-cp39-cp39-macosx_10_9_x86_64.whl (21 kB)
+Collecting g2p_en
+  Downloading g2p_en-2.1.0-py3-none-any.whl (3.1 MB)
+Collecting g2pM
+  Downloading g2pM-0.1.2.5-py3-none-any.whl (1.7 MB)
+Collecting h5py
+  Downloading h5py-3.7.0-cp39-cp39-macosx_10_9_x86_64.whl (3.2 MB)
+Collecting inflect
+  Downloading inflect-5.6.0-py3-none-any.whl (33 kB)
+Collecting jieba
+  Downloading jieba-0.42.1.tar.gz (19.2 MB)
+Collecting jsonlines
+  Downloading jsonlines-3.0.0-py3-none-any.whl (8.5 kB)
+Collecting kaldiio
+  Downloading kaldiio-2.17.2.tar.gz (24 kB)
+Collecting librosa==0.8.1
+  Downloading librosa-0.8.1-py3-none-any.whl (203 kB)
+Collecting loguru
+  Downloading loguru-0.6.0-py3-none-any.whl (58 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.5.2-cp39-cp39-macosx_10_9_x86_64.whl (7.3 MB)
+
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/nara-wpe/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x102787a00>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/nara-wpe/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x102787bb0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/nara-wpe/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x102787d60>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/nara-wpe/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x102787f10>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/nara-wpe/
+ERROR: Could not find a version that satisfies the requirement nara_wpe (from paddlespeech) (from versions: none)
+ERROR: No matching distribution found for nara_wpe
+WARNING: You are using pip version 21.1.2; however, version 22.1.2 is available.
+You should consider upgrading via the '/Users/peterzhang/dev/github/PaddleSpeech/venv/bin/python -m pip install --upgrade pip' command.

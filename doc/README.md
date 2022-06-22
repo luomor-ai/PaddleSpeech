@@ -124,4 +124,6 @@ nohup python3 ocr_debugger_server.py cpu &
 docker run -p 9292:9292 --name server_test_gpu --gpus 2 paddlepaddle/serving:latest-cuda10.0-cudnn7-devel
 nvidia-docker pull hub.baidubce.com/paddlepaddle/serving:latest-cuda9.0-cudnn7
 docker version
+
+docker oceanbase
 ```

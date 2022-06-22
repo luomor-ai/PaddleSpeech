@@ -139,4 +139,7 @@ docker logs -f oceanbase-ce
 docker exec -it oceanbase-ce bash
 obd cluster list
 obd cluster start obdemo
+
+sudo docker stop oceanbase-ce
+sudo docker rm oceanbase-ce
 ```

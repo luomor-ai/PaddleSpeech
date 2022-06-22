@@ -106,3 +106,22 @@ protoc --version    #检查是否安装成功
         url = https://github.com/google/googletest.git
         ignore = dirty
 ```
+
+```shell
+https://zhuanlan.zhihu.com/p/268016844
+docker pull hub.baidubce.com/paddlepaddle/serving:latest
+docker run -p 9292:9292 --name test -dit hub.baidubce.com/paddlepaddle/serving:latest
+docker exec -it test bash
+docker run -p 9292:9292 --net host --name local_test -dit hub.baidubce.com/paddlepaddle/serving:latest
+docker cp ocr local_test:opt
+docker exec -it local_test bash
+python3 -m pip install paddlepaddle -i https://mirror.baidu.com/pypi/simple
+
+pip install paddle-serving-server -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+nohup python3 ocr_debugger_server.py cpu &
+
+docker run -p 9292:9292 --name server_test_gpu --gpus 2 paddlepaddle/serving:latest-cuda10.0-cudnn7-devel
+nvidia-docker pull hub.baidubce.com/paddlepaddle/serving:latest-cuda9.0-cudnn7
+docker version
+```

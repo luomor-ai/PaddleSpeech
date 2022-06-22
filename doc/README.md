@@ -126,4 +126,13 @@ nvidia-docker pull hub.baidubce.com/paddlepaddle/serving:latest-cuda9.0-cudnn7
 docker version
 
 docker oceanbase
+https://developer.aliyun.com/article/789554
+https://hub.docker.com/repository/docker/obpilot/oceanbase-ce
+
+docker pull obpilot/oceanbase-ce:latest
+docker images
+docker run -itd -m 10G --name oceanbase-ce  obpilot/oceanbase-ce:latest
+# -v /data:/data
+docker run -itd --name oceanbase-ce obpilot/oceanbase-ce:latest
+docker ps
 ```

@@ -135,4 +135,8 @@ docker run -itd -m 10G --name oceanbase-ce  obpilot/oceanbase-ce:latest
 # -v /data:/data
 docker run -itd --name oceanbase-ce obpilot/oceanbase-ce:latest
 docker ps
+docker logs -f oceanbase-ce
+docker exec -it oceanbase-ce bash
+obd cluster list
+obd cluster start obdemo
 ```

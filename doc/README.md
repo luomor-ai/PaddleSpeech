@@ -140,6 +140,30 @@ docker exec -it oceanbase-ce bash
 obd cluster list
 obd cluster start obdemo
 
+admin
+adminPWD123
+
+obclient -h127.1 -uroot@sys#obdemo -P2883 -prootPWD123 -c -A oceanbase
+obclient -h127.1 -uroot@sys -P2883 -prootPWD123 -c -A oceanbase
+alter resource unit sys_unit_config min_cpu=5;
+-- 创建资源单元规格
+CREATE resource unit S4C1G max_cpu=4, min_cpu=4, max_memory='1G', min_memory='1G', max_iops=10000, min_iops=1000, max_session_num=1000000, max_disk_size='1024G'; 
+
+-- 创建资源池（分配资源）
+CREATE resource pool my_pool unit = 'S4C1G', unit_num = 1;
+
+-- 创建实例（mysql类型）
+create tenant obmysql resource_pool_list=('my_pool'), primary_zone='RANDOM',comment 'mysql tenant/instance', charset='utf8' set ob_tcp_invited_nodes='%', ob_compatibility_mode='mysql';
+
+exit;
+
+obclient -h 127.1 -uroot@obmysql#obdemo -P2883 -p -c -A test
+obclient -h 127.1 -uroot@obmysql -P2883 -p -c -A test
+show databases;
+source bmsql.sql
+show tables;
+show tablegroups;
+
 sudo docker stop oceanbase-ce
 sudo docker rm oceanbase-ce
 ```

@@ -166,4 +166,6 @@ show tablegroups;
 
 sudo docker stop oceanbase-ce
 sudo docker rm oceanbase-ce
+
+https://github.com/oceanbase/obdeploy/tree/master/example
 ```
